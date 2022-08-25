@@ -74,6 +74,7 @@ if (isset($_POST['save_excel'])) {
                         $counter++;
                         echo "Success fully uploaded row: " . $row[0] . "<br>";
                     } else {
+                        echo "Failed row ID: " . $row[0] . "<br>";
                         echo "<a href='index.php'>Go Back</a>";
                     }
                 } catch (PDOException $th) {
